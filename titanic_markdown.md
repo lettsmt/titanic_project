@@ -1194,9 +1194,7 @@ df.head()
 
 
 
-<br>
-<br>
-<br>
+
 #### II. Exploratory Analysis and Dimensionality Reduction
 
 This section of the analysis uses a corrleation matrix, principal components analysis, random forest classifier, and various visualizations to explore the data and reduce dimensionality. We begin with the correlation matrix. 
@@ -1518,11 +1516,8 @@ clf_fe.sort_values(0, ascending=False)
 
 It appears that, in many cases, family size and specific surname groups are unimportant, so we will remove every feature with importance < .01 from our training data. 
 
-<br>
-<br>
-<br>
+
 #### III. Prediction
-<br>
 
 Now that we have processed, normalized, and explored the data, we can begin developing our model. In this analysis, we employ logistic regression using Scikit Learn. To select our training and test data, we use Scikit Learn's 'train_test_split' package to save us the time of randomly selecting samples. In addition, we employ a Receiving Operating Characteristic plot to analyze our model's true positive and false positive rates. There are methods for tuning hyperparamters, however, this analysis uses a high regularization value for the time being. 
 
@@ -1566,9 +1561,7 @@ plt.show()
 
 86% is not bad. The model correctly predicted death 91% of the time, whereas survival was correctly calculated 79% of the time. The latter observation makes sense because many third-class men survived, which is notoriously difficult to model for this dataset. 
 
-<br>
-<br>
-<br>
+
 #### IV. Conclusion
-<br>
+
 Additional work is needed for exploring dimensionality reduction for non-normally distributed data, transforming leptokurtic data, extracting additional features, tuning hyperparameters, and testing other machine learning models. Nonetheless, a fairly decent model can be constructed through fairly basic processing and feature extraction. 
