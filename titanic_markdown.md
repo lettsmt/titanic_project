@@ -1,23 +1,22 @@
 
 # Predicting Survival on the RMS Titanic Using Logistic Regression
 #### Michael T. Letts | lettsmt@gmail.com | Last Updated: December 15th, 2017
-<br>
-<br>
-<br>
+
+
 #### Foreword
-<br>
 The below project is unfinished. Numerous assumptions and hypotheses are currently untested, and additional feature engineering and hyperparameter tuning should be employed. In addition, a Principal Components Analysis is arguably inappropriate for 'mixed' data (e.g. continuous and dichotomous) since the assumption of a Gaussian normal distribution is violated, but this project employs a manual implementation of a PCA anyway. Other methods, like Independent Components Analysis, are being explored for viability. In any case, what you see below is what I have currently finished thus far. I hope that you enjoy my work. 
-<br>
-<br>
+ 
 #### Sections: 
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I. Data Processing
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;II. Exploratory Analysis and Dimensionality Reduction
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;III. Prediction 
+
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IV. Conclusion
-<br>
-<br>
+
 #### I. Data Preprocessing
-<br>
 The title basically says it all-- this section is dedicated to preprocessing the data. More specifically, we will do things like one-hot encode categorical variables, like class or embarked, replace string values with numerical data, impute missing values, et cetera. To begin, let's import our dependencies, set display options, import the data, and inspect the first few rows of data. 
 
 
